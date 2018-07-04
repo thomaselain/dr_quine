@@ -37,7 +37,6 @@ clean:
 	@rm -rf $(OBJ)
 
 re:
-	@clear
 	@make fclean all
 
 go: re all

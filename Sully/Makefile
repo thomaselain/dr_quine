@@ -19,7 +19,7 @@ NAME := Sully
 
 SRC := $(NAME).c
 
-CFLAGS := $(INC) -g -F libs/ -Wall -Wextra -Werror
+CFLAGS := -Wall -Wextra -Werror
 OBJ := $(SRC:.c=.o)
 CC := gcc
 
@@ -29,7 +29,7 @@ all: $(NAME)
 
 
 $(NAME) : $(OBJ)
-	@$(CC) -o $(NAME) $(OBJ)
+	@$(CC) -o $(NAME) $(SRC)
 
 fclean: clean
 	@rm -rf $(NAME)
@@ -38,7 +38,6 @@ clean:
 	@rm -rf $(OBJ)
 
 re:
-	@clear
 	@make fclean all
 
 go: re all
