@@ -32,7 +32,7 @@ $(NAME) : $(OBJ)
 	@$(CC) -o $(NAME) $(OBJ)
 
 fclean: clean
-	@rm -rf $(NAME)
+	@rm -rf $(NAME) Grace_kid.c
 
 clean:
 	@rm -rf $(OBJ)

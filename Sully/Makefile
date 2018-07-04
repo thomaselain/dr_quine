@@ -32,7 +32,7 @@ $(NAME) : $(OBJ)
 	@$(CC) -o $(NAME) $(SRC)
 
 fclean: clean
-	@rm -rf $(NAME)
+	@rm -rf $(NAME) Sully_*
 
 clean:
 	@rm -rf $(OBJ)
